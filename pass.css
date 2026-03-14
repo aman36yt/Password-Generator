@@ -1,0 +1,93 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* background-color: antiquewhite; */
+    background: #030000;
+    background: linear-gradient(90deg, rgba(3, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-family: Arial,sans-serif;
+}
+.container{
+    height: 250px;
+    width: 450px;
+    background-color:rgba(255,255,255,0.025);
+    padding: 20px;
+    border-radius: 50px;
+    /* box-shadow: 0 1px 8px rgba(255,255,255,0); */
+    margin: 10px;
+    transition: 0.7s ease-in 0.2s 
+}
+.container:hover{
+    box-shadow: 0 6px 8px rgba(255,255,255,0.5);
+}
+.password_generator{
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color:rgba(255,255,255,0.5);
+}
+.input::placeholder{
+    letter-spacing: 0;
+    color:rgba(255,255,255,0.5);
+}
+
+/* put class in icon as fa-2x to increase size */
+.fa-copy{
+    cursor: pointer;
+    opacity: .4;
+}
+.fa-copy:hover{
+    opacity: .8;
+}
+.btn{
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:rgba(255,255,255,0.025);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    color: rgba(0,0,0,1);
+    cursor: pointer;
+    position: relative;
+    left:150px;
+}
+.btn:hover{
+    border:transparent;
+    /* color:grey; */
+    box-shadow: 0 2px 8px rgba(255,255,255,0.4);
+}
+.btn:active{
+    transform: scale(.95);
+}
+.alert_container{
+    background-color:lightgreen;
+    height: 50px;
+    width: 300px;
+    position:fixed;
+    right:20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.pop_message.alert_container{
+    right: -300px;
+}
